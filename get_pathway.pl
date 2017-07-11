@@ -11,7 +11,7 @@
 		#print $data[1],"\n";
 		#@data1 = split ":",$data[1];
 		$data[5] =~ s/, /\n/g; 
-		open OUT,">$data[1].kegg.txt" or die $!;
+		open OUT,">/home/wn/data/alignment/gene-paralog/Atha/pathway/kegg/$data[1].kegg.txt" or die $!;
 		print OUT $data[5],"\n";
 	}
 	close IN;
